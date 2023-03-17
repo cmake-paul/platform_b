@@ -1,5 +1,5 @@
 target_include_directories(
-    PlatformA
+    PlatformB
     PRIVATE
     "${CMAKE_CURRENT_LIST_DIR}"
 )
