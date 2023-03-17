@@ -8,15 +8,15 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Common)
 
-add_library(PlatformA)
+add_library(PlatformB)
 
 add_subdirectory(include)
 add_subdirectory(src)
 
 target_link_libraries(
-    PlatformA
+    PlatformB
     PUBLIC
     Common
 )
 
-register_with_common(IMPLEMENTATION PlatformA)
+register_with_common(IMPLEMENTATION PlatformB)
